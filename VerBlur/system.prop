@@ -51,9 +51,33 @@ debug.composition.type=c2d
 debug.performance.tuning=1
 video.accelerate.hw=1
 persist.sys.ui.hw=1
+debug.sf.hw=1
 
 ################################
 # Miscellaneous Safe Tweaks
 ################################
 # Better scrolling
 persist.sys.scrollingcache=3
+
+#########################
+# EXTENDED OPTIMIZATIONS
+#########################
+
+# --- Dalvik/ART Runtime Optimization ---
+# Disables strict Java Native Interface checking. 
+# Safe for production/daily use, reduces CPU overhead significantly.
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+dalvik.vm.checkjni=false
+dalvik.vm.verify-bytecode=false
+
+# --- Touch & UI Responsiveness ---
+# Reduces the distance a finger must move before a touch is registered as a scroll.
+view.touch_slop=2
+view.scroll_friction=10
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+# --- System Sleeping ---
+# Ensures the device enters deep sleep correctly to save resources/battery when idle.
+pm.sleep_mode=1
