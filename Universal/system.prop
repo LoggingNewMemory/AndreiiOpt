@@ -70,7 +70,3 @@ persist.vendor.graphics.disable_blur=1
 ################################
 # Better scrolling
 persist.sys.scrollingcache=3
-
-# Prevent logs from filling storage
-persist.service.adb.enable=0
-persist.service.debuggable=0
