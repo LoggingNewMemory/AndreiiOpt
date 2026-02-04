@@ -1,12 +1,9 @@
 LATESTARTSERVICE=true
 
 ui_print "------------------------------------"
-ui_print "               Zetamin              "
+ui_print "             Andreii Opt            "
 ui_print "------------------------------------"
-ui_print "         By: Kanagawa Yamada        "
-ui_print "------------------------------------"
-ui_print "      DO NOT COMBINE WITH OTHER     "
-ui_print "            SCREEN TWEAKS           "
+ui_print "  By: Kanagawa Yamada & @andrei051  "
 ui_print "------------------------------------"
 ui_print " "
 sleep 1.5
@@ -28,14 +25,10 @@ sleep 1.5
 ui_print "------------------------------------"
 ui_print "            MODULE INFO             "
 ui_print "------------------------------------"
-ui_print "Name : Zetamin"
+ui_print "Name : Andreii Opt Blur Version"
 ui_print "Version : 1.0"
 ui_print "Support Root : Magisk / KernelSU"
 ui_print " "
 sleep 1.5
 
-ui_print "        Installing Zetamin          "
-ui_print " "
-
-unzip -o "$ZIPFILE" 'Zetamin/*' -d $MODPATH >&2
-set_perm_recursive $MODPATH/Zetamin 0 0 0755 0644
+ui_print "      Install Done. That's it       "
